@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>cynic chat</title>
+		<link rel="stylesheet" href="chat.css">
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+	</head>
+	<body>
+		<div class="header">
+			<a href="javascript:showusers();" class="header-users-button">show users</a>
+			<div class="header-centerblock">
+				<span class="header-title" id="channel">chat</span><br>
+				<span class="header-topic" id="topic">this is a topic</span>
+			</div>
+		</div>
+		<div class="users" id="users">
+			<div class="users-title" id="users-count">X users</div>
+			<div class="users-title-sub" id="users-count-irc">(X IRC)</div>
+			<hr>
+			<div class="users-grouptitle">geist ▾</div>
+			<div class="users-grouptitle-sub">
+				<ul id="geist-user-list">
+				</ul>
+			</div>
+			<div class="users-grouptitle">irc ▾</div>
+			<div class="users-grouptitle-sub">
+				<ul id="irc-user-list">
+				</ul>
+			</div>
+		</div>
+		<div class="messages">
+		</div>
+		<div class="textbox-controls">
+			<div class="textbox-wrapper">
+				<textarea class="textbox" placeholder="type here..."></textarea>
+			</div>
+			<a href="javascript:dom_send();" class="textbox-send">send</a>
+		</div>
+	</body>
+	<script src="client.js"></script>
+</html>
